@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/dashboard_detail_container"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".DashboardDetailActivity" tools:ignore="MergeRootFrame" >
+
+    <view
+        custom:widgetType="Dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.example.ash.energymonitor.widgetLib.WidgetView"
+        android:id="@+id/view"
+        android:layout_gravity="left|top" />
+</FrameLayout>

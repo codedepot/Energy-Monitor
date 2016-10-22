@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:columnCount="10"
+    android:rowCount="22"
+    android:background="@color/very_white"
+    >
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="55dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:background="@color/very_white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Historical"
+        android:id="@+id/textView2"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:autoText="false"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Current"
+        android:id="@+id/textView3"
+        android:layout_row="1"
+        android:layout_column="4"
+        android:textColor="@android:color/black"
+        android:gravity="top|left|bottom|right"
+        android:layout_gravity="center_horizontal" />
+
+    <view
+        class="com.example.ash.energymonitor.widgetLib.WidgetView"
+        custom:widgetType="RunGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view2"
+        android:clickable="false"
+        android:longClickable="false"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="3" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal">
+        <TableRow android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Indoor Temperature "
+                android:id="@+id/table_item1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/table_detail1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Outdoor Temperature"
+                android:id="@+id/table_item2"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/table_detail2"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/black" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.example.ash.energymonitor.widgetLib.WidgetView"
+        android:id="@+id/view5"
+        android:layout_row="4"
+        android:layout_column="4"
+        custom:widgetType="BarGraph"/>
+
+    <Space
+        android:layout_width="40px"
+        android:layout_height="20px"
+        android:layout_row="6"
+        android:layout_column="3" />
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.example.ash.energymonitor.widgetLib.WidgetView"
+        android:id="@+id/view"
+        android:layout_row="2"
+        android:layout_column="4"
+        custom:widgetType="Dial"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Comparison"
+        android:id="@+id/textView4"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_row="3"
+        android:layout_column="1" />
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.example.ash.energymonitor.widgetLib.WidgetView"
+        android:id="@+id/view4"
+        android:layout_column="0"
+        custom:widgetType="CompareBins"
+        android:layout_row="4"
+        android:layout_marginLeft="5dp" />
+
+</GridLayout>
+

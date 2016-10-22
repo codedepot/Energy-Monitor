@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+    android:id="@+id/overviewLayout"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20px"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Monthly Cost"
+        android:id="@+id/textView5"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="House A "
+        android:id="@+id/houseALabel"
+        android:layout_row="4"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/houseACost"
+        android:layout_row="4"
+        android:layout_column="4" />
+
+    <Space
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_row="3"
+        android:layout_column="3" />
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.example.ash.energymonitor.widgetLib.WidgetView"
+        android:id="@+id/houseCompare"
+        android:layout_row="4"
+        android:layout_column="11"
+        custom:widgetType="CompareBins"
+        android:layout_rowSpan="16" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_row="5"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="House B"
+        android:id="@+id/textView7"
+        android:layout_row="6"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/houseBCost"
+        android:layout_row="6"
+        android:layout_column="4" />
+
+
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_row="7"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fridge"
+        android:id="@+id/textView8"
+        android:layout_row="8"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/fridgeCost"
+        android:layout_row="8"
+        android:layout_column="4" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_row="9"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dish Washer"
+        android:id="@+id/textView6"
+        android:layout_row="10"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/dishWasherCost"
+        android:layout_row="10"
+        android:layout_column="4" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_row="11"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fan Coil"
+        android:id="@+id/textView9"
+        android:layout_row="12"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/fanCoilCost"
+        android:layout_row="12"
+        android:layout_column="4" />
+
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_row="13"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Washing Machine"
+        android:id="@+id/textView10"
+        android:layout_row="14"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/washingMachineCost"
+        android:layout_row="14"
+        android:layout_column="4" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_row="15"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Microwave"
+        android:id="@+id/textView11"
+        android:layout_row="16"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/microwaveCost"
+        android:layout_row="16"
+        android:layout_column="4" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_row="17"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Coffee Maker"
+        android:id="@+id/textView12"
+        android:layout_row="18"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/coffeeMakerCost"
+        android:layout_row="18"
+        android:layout_column="4" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_row="22"
+        android:layout_column="13" />
+
+
+    <Space
+        android:layout_width="50dp"
+        android:layout_height="20px"
+        android:layout_row="6"
+        android:layout_column="6" />
+
+</GridLayout>

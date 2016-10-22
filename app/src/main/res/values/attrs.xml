@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WidgetView">
+        <attr name="gridWidth" format="integer" />
+        <attr name="gridHeight" format="integer" />
+
+        <attr name="widgetTypes" format="enum">
+            <enum name="Dial" value="1"/>
+            <enum name="runGraph" value="2"/>
+            <enum name="barCompare" value="3"/>
+        </attr>
+        <attr name="widgetType" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+
+</resources>
