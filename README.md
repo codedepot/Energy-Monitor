@@ -1,6 +1,6 @@
 "# Energy-Monitor" 
 
-An Android application that was made for the ... It allows the user to display their usage for their entire house and each appliance, as well as the associated cost. The application leveraged the Dropbox API to avoid opening a public port for the server. All the graphs and widgets of this app were custom made. 
+An Android application that was made for the  Archetype Sustainable House (ASH: http://www.sustainablehouse.ca/) It allows the user to display their usage for their entire house and each appliance, as well as the associated cost. The application leveraged the Dropbox API to avoid opening a public port for the server. All the graphs and widgets of this app were custom made. 
 
 The interface:
 
